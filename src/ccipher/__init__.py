@@ -4,9 +4,9 @@ import string
 alphabet = string.ascii_lowercase
 numbers = '0123456789'
 
-from decrypt import *
-from encrypt import *
-from commons import *
+from .decrypt import *
+from .encrypt import *
+from .commons import *
 
 __title__ = 'caesarcipher'
 __version__ = "0.0.1"

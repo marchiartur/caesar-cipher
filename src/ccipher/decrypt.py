@@ -1,4 +1,5 @@
-from __init__ import alphabet, numbers, commons
+from . import alphabet, numbers
+from .commons import convertStringToLowerCase
 
 def decryptLetter(letter: str, key: int) -> str:
     letterIndex = alphabet.find(letter)
@@ -21,7 +22,7 @@ def decryptNumber(number: int, key: int) -> str:
     return numbers[newIndex]
 
 def decrypt(string: str, key: int) -> str:
-    lowerstring = commons.convertStringToLowerCase(string)
+    lowerstring = convertStringToLowerCase(string)
 
     newString = ''
 

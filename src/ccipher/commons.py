@@ -1,2 +1,2 @@
-def convertStringToLowerCase(string):
+def convertStringToLowerCase(string: str) -> str:
     return string.lower()

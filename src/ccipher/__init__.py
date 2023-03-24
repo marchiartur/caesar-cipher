@@ -1,15 +1,14 @@
-
 import string
+from typing_extensions import LiteralString
 
-alphabet = string.ascii_lowercase
-numbers = '0123456789'
+alphabet: LiteralString = string.ascii_lowercase
+numbers: string = '0123456789'
 
-from .decrypt import *
-from .encrypt import *
-from .commons import *
+__all__ = [
+    "alphabet",
+    "numbers"
+]
 
-__title__ = 'caesarcipher'
-__version__ = "0.0.1"
-__author__ = 'Artur Marchi Pacagnan'
-__license__ = 'MIT'
-__copyright__ = 'Copyright 2023 Artur Marchi Pacagnan'
+from .decrypt import decrypt
+from .encrypt import encrypt
+from .commons import convertStringToLowerCase
